@@ -42,7 +42,7 @@ func (v Int64s) Sort() {
 
 // Copy creates a copy of the array.
 func (v Int64s) Copy() Int64s {
-	return v[:]
+	return v.Filter(func(in int64) bool { return true })
 }
 
 // Uniq returns a unique set (without allocate).
