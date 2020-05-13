@@ -1,4 +1,4 @@
-package int
+package intx
 
 // Int64s array of int64.
 type Int64s []int64
